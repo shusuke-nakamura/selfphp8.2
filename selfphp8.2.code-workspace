@@ -6,7 +6,10 @@
 	],
 	"settings": {
 		"files.encoding": "utf8",
-		"files.eol": "\n"
+		"files.eol": "\n",
+		"[php]": {
+			"editor.formatOnSave": true,
+		}
 	},
 	"launch": {
 		"version": "0.2.0",
