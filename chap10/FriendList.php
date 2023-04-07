@@ -14,4 +14,9 @@ class FriendList implements IteratorAggregate
     {
         $this->list[] = $p;
     }
+
+    public function __invoke(int $index): mixed
+    {
+        return $this->list[$index];
+    }
 }
