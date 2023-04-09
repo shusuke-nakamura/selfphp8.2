@@ -30,6 +30,12 @@
             <label for="published">刊行日:</label><br />
             <input type="text" name="published" id="published" size="15" maxlength="10" />
         </div>
+        <?php
+        session_start();
+        $token = uniqid(bin2hex(random_bytes(13)), true);
+        $_SESSION['token'] = $token;
+        ?>
+        <input type="hidden" name="token" value="<?php print $token; ?>" />
         <div>
             <input type="submit" value="登録" />
         </div>
